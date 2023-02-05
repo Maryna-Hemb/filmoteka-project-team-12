@@ -40,13 +40,6 @@ const options = { // default value of options
 export const pagination = new Pagination(container, options);
 export const paginationPage = pagination.getCurrentPage();
 
-
-<<<<<<< Updated upstream
-paganation.on('afterMove', (e) => {
-     const currentPage = e.page;
-     console.log(currentPage);
-});
-=======
 //тут частина коду з картки cards-markup
 function createContentCard(film) {
     const date = film.release_date ?? film.first_air_date;
@@ -67,7 +60,6 @@ function createContentCard(film) {
       </div>
     </a>
   </article>`;
->>>>>>> Stashed changes
 
   return createFragmentTemplate(article);
 }
