@@ -60,9 +60,9 @@ function createContentCard(film) {
       </div>
     </a>
   </article>`;
-
   return createFragmentTemplate(article);
 }
+
 
 function createFragmentTemplate(str) {
   const template = document.createElement('template');
