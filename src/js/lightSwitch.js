@@ -1,5 +1,6 @@
-const icon = document.querySelector('.fas');
 const switchDayNight = document.querySelector('.day-night-switch');
+const text = document.querySelector('.title-switch');
+console.log(text);
 
 if (localStorage.getItem('darkMode') === null) {
   localStorage.setItem('darkMode', 'false');
@@ -27,7 +28,9 @@ switchDayNight.addEventListener('change', () => {
 
 function addDarkTheme() {
   document.body.classList.add('dark__theme');
+  text.textContent = 'Switch to light theme';
 }
 function removeDarkTheme() {
   document.body.classList.remove('dark__theme');
+  text.textContent = 'Switch to dark theme';
 }
