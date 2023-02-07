@@ -2,6 +2,7 @@ export class Loader {
   constructor() {
     this.loaderEl = document.createElement('div');
     this.loaderEl.classList.add('loader');
+    this.loaderEl.classList.add('loader-hidden');
     document.body.appendChild(this.loaderEl);
   }
 
